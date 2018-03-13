@@ -1,5 +1,5 @@
 {
-    "CONFIG_URL" : "https://s3.amazonaws.com/pnsdigital.com/hurricane/TEST/config.json",
+    "CONFIG_URL" : "https://raw.githubusercontent.com/mobilegmg/DemoConfigs/master/Configs/hurricane.json",
     "MINIMUM_USAGE_FOR_RATING": 6,
     "GOOGLE_ANALYTICS_TAG" : "UA-17700582-6",
     "DEFAULT_LAT" : 29.422,

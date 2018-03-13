@@ -1,5 +1,5 @@
 {
-    "CONFIG_URL" : "https://s3.amazonaws.com/pnsdigital.com/sierra/DEMO/config.json",
+    "CONFIG_URL" : "https://raw.githubusercontent.com/mobilegmg/DemoConfigs/master/Configs/sierra.json",
     "MINIMUM_USAGE_FOR_RATING": 6,
     "MIN_VERSION" : "3",
     "IOS_FORCE_VERSION": "0.0",

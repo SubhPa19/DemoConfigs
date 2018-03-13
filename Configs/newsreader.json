@@ -1,5 +1,5 @@
 {
-  "CONFIG_URL": "https://s3.amazonaws.com/pnsdigital.com/demonewsreader/config.json",
+  "CONFIG_URL": "https://raw.githubusercontent.com/mobilegmg/DemoConfigs/master/Configs/newsreader.json",
   "BASE_URL": "http://appfeeds.grahamdigital.com/KSATUAT/",
   "APPLICATION_GROUP": "group.PNSDigital.TrailblazerEnterprise",
   "WIDGET_RELATIVE_URL": "Widget.json",
