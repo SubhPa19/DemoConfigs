@@ -1,0 +1,63 @@
+{
+    "CONFIG_URL" : "https://s3.amazonaws.com/pnsdigital.com/hurricane/TEST/config.json",
+    "MINIMUM_USAGE_FOR_RATING": 6,
+    "GOOGLE_ANALYTICS_TAG" : "UA-17700582-6",
+    "DEFAULT_LAT" : 29.422,
+    "DEFAULT_LON" : -98.497,
+    "WEATHER_NEWS_URL" : "https://www.ksat.com/content/pns/ksat/weather/weather-news.html?layout=simple",
+    "PLAN_PREPARE_URL" : "https://www.ksat.com/content/pns/ksat/weather/hurricane-news.html?layout=simple",
+    "AD_TAG" : "/3468/ibs.ant.app_hurricanes",
+    "ITUNES_APP_ID" : "549850567",
+    "SETTINGS_MET_HEADER" : "Updates from KSAT12,\nYour Weather Authority",
+    "HURRICANES_API_URL" : "https://s3.amazonaws.com/gmg-hurricanes-dev/hurricanes/TEST1.json",
+    "APPLICATION_GROUP" : "group.GrahamDigital.TestHurricane",
+    "MIN_VERSION" : "0.0",
+    "IOS_FORCE_VERSION": "0.0",
+    "ITUNES_URL" : "",
+    "SERVICES" : {
+        "CARNIVAL": {
+            "APP_KEY": "473f86845d23dce097a0ad3e24866284e9d4b186"
+        },
+        "MAX_MAP" : {
+            "MEMBER_ID" : "1164",
+            "MAP_ID" : "0004",
+            "TEMPLATE_ID" : "0003",
+            "SDK_KEY" : "D780A3A1-57C7-4004-8093-F96F600B3397",
+            "NEW_SDK_KEY" : "7B4966DE-936F-4A88-BD45-95FDA697766F"
+        },
+        "REVEAL": {
+            "API_KEY": "A6A04A381C596D9E0AF4991AC57C0FFEB347E88D6516022F0568",
+            "API_ENDPOINT_BASE" : "https://mapi.grahamdigital.com"
+        },
+        "COMSCORE": {
+            "C2_VALUE": "7507054",
+            "PUBLISHER_SECRET_CODE": "7a4fa75513b461050f0c03910aaf27e2"
+        }
+    },
+    "TROPICAL_MAX_MAP" : {
+        "OVERLAYS" : ["wsisdk_OverlayTropicalTracks"],
+        "LAYER" : "wsisdk_LayerHDSatelliteTropics",
+        "CATEGORY" : "wsisdk_WeatherAlertsTropical",
+        "TRANSPARENCY" : 70,
+        "INITIAL_TRACKER_COORDS" : {
+            "LAT" : 14.0,
+            "LON" : -65.00
+        },
+        "INITIAL_TRACKER_ZOOM" : {
+            "ZOOM_X" : 100.0,
+            "ZOOM_Y" : 10.0,
+            "ZOOM_LEVEL" : 2.2
+        }
+    },
+    "LOCAL_RADAR_MAX_MAP" : {
+        "LAYER" : "wsisdk_LayerRadar",
+        "CATEGORY" : "wsisdk_WeatherAlertsSevere",
+        "LOOP" : true,
+        "TRANSPARENCY" : 10,
+        "INITIAL_TRACKER_ZOOM" : {
+            "ZOOM_X" : 0.4,
+            "ZOOM_Y" : 0.4,
+            "ZOOM_LEVEL" : 10.5
+        }
+    }
+}

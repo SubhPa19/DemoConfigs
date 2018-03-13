@@ -1,0 +1,119 @@
+{
+    "CONFIG_URL" : "https://s3.amazonaws.com/pnsdigital.com/sierra/DEMO/config.json",
+    "MINIMUM_USAGE_FOR_RATING": 6,
+    "MIN_VERSION" : "3",
+    "IOS_FORCE_VERSION": "0.0",
+    "SERVICES" : {
+        "CARNIVAL": {
+            "APP_KEY": "4e833721de5d1c7742c6c7991084a67f4ec2e1ba"
+        },
+        "PLAYKIT": {
+            "URL": "https://cdnapisec.kaltura.com/p/1636891/sp/%d/playManifest/entryId/%@/format/applehttp/protocol/https/a.m3u8",
+            "PARTNER_ID": 2028331,
+            "PLAYER_ID": 32387131,
+            "AD_BASE": "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/%@%@/%@&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]",
+            "AD_NETWORK": "15466288",
+            "AD_PREFIX": "/TEST/App/Sierra"
+        },
+        "KALTURA" : {
+            "BASE_URL": "http://cdnapi.kaltura.com",
+            "URL" : "http://cdnapi.kaltura.com/p/2028331/sp/32387131/embedIframeJs/uiconf_id/%d/partner_id/%d?iframeembed=true&playerId=kaltura_player&entry_id=%s",
+            "ANDROID_BASE_URL": "http://kgit.html5video.org/branches/master/mwEmbedFrame.php?&wid=_%d&uiconf_id=%d&entry_id=%s",
+            "PARTNER_ID" : 2028331,
+            "PLAYER_ID" : 32387131
+        },
+        "TWITTER": {
+            "CONSUMER_KEY" : "I2ALLYPXvrsQgHuLAYTLsZ1ts",
+            "SECRET_KEY" : "iyOfwSc97XhYEEtrvJTpkYqbChRFqvKHGbuokcsJyRN0Zf43gS"
+        },
+        "AD_TAG": "/15466288/TEST/App/Sierra",
+        "API": {
+            "DATA_REFRESH_INTERVAL": 150
+        },
+        "GOOGLE_ANALYTICS": {
+            "TRACKING_ID": "xxxxx"
+        },
+        "MAX_MAP" : {
+            "MEMBER_ID" : "1164",
+            "MAP_ID" : "0018",
+            "TEMPLATE_ID" : "0003",
+            "SDK_KEY" : "3C3388B3-D633-4D42-A136-C2B6DF33BA18",
+            "DEFAULT_LOCATION": [
+                25.78,
+                -80.22
+            ]
+        },
+        "COMSCORE": {
+            "C2_VALUE": "7507054",
+            "PUBLISHER_SECRET_CODE": "7a4fa75513b461050f0c03910aaf27e2"
+        }
+    },
+    "MENU": [
+          {
+            "SCREEN": "WebView",
+            "TITLE": "Reach FAQ",
+            "AD_TAG": "/15466288/TEST/App/Sierra/Section_1",
+            "URL": "http://reach.grahamdigital.com/app/faq.html"
+          },
+          {
+            "SCREEN": "SierraFeed",
+            "TITLE": "Demo SIE Feed",
+            "AD_TAG": "/15466288/TEST/App/Sierra/Section_2",
+            "URL": "http://appfeeds.grahamdigital.com/sierra/DEMO/groups.json"
+          },
+          {
+            "SCREEN": "traffic",
+            "TITLE": "Traffic",
+            "AD_TAG": "/15466288/TEST/App/Sierra/Section_3",
+            "MAP": {
+              "LAYER": "wsisdk_LayerTrafficFlowAndRadar",
+              "OVERLAYS": ["wsisdk_OverlayTrafficIncidents"],
+              "LEGEND_NAME": "legend_traffic.png",
+              "LEGEND_TRANSPARENCY": 90
+            }
+          },
+          {
+            "SCREEN": "WebView",
+            "TITLE": "ClickOnDetroit",
+            "AD_TAG": "/15466288/TEST/App/Sierra/Section_4",
+            "URL": "http://www.clickondetroit.com"
+          },
+          {
+            "SCREEN": "Settings",
+            "TITLE": "Settings",
+            "AD_TAG": "/15466288/TEST/App/Sierra/Section_5",
+            "PUSH_ALERTS": [
+              {
+                "text": "Demo Updates",
+                "channel": "BreakingNews"
+              }
+            ]
+          }
+  ],
+  "PRESENTATION": {
+    "HOME": {
+      "TITLE": "Sierra Demo"
+    },
+    "COLORS": {
+      "NAV_HEADER_CONTROLS": "#ffffff",
+      "NAV_HEADER_BACKGROUND": "#1A073A",
+      "ACCENT_BRIGHT": "#870149",
+      "ACCENT_DARK": "#590242",
+      "TEXT_HEADING": "#1A073A",
+      "TEXT_COPY": "#222222",
+      "TWITTER_BAR": "#DFA731",
+      "TWITTER_TIMESTAMP": "#1A073A",
+      "TWITTER_USER": "#590242",
+      "STATUS_BAR_WHITE": true
+    },
+    "NOTIFICATION": {
+      "POPUP": true
+    },
+    "CARD" : {
+      "TIMESTAMP" : false
+    },
+    "AD" : {
+      "INTERSTITIAL" : true
+    }
+  }
+}
