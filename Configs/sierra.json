@@ -63,7 +63,7 @@
           },
           {
             "SCREEN": "traffic",
-            "TITLE": "Traffic",
+            "TITLE": "Traffic News",
             "AD_TAG": "/15466288/TEST/App/Sierra/Section_3",
             "MAP": {
               "LAYER": "wsisdk_LayerTrafficFlowAndRadar",
