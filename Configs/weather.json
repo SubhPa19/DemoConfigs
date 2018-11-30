@@ -1,476 +1,367 @@
 {
-  "AD_TAG": "/15466288/TEST/App/Sierra",
-  "SHOW_INTERSTITIAL_AD": true,
-  "CONFIG_URL": "https://raw.githubusercontent.com/mobilegmg/DemoConfigs/master/Configs/weather.json",
-  "DEFAULT_LAT": 39.84619,
-  "DEFAULT_LON": -76.67163,
-  "GOOGLE_ANALYTICS_TAG": "UA-38690119-6",
-  "ITUNES_URL": "",
-  "MIN_VERSION": "2.1",
-  "IOS_FORCE_VERSION": "0.0",
-  "MINIMUM_USAGE_FOR_RATING": 6,
-  "PUSH_ALERTS": [
-    {
-      "channel": "MetsUpdates",
-      "text": "THIS IS THE DEMO APP"
-    }
-  ],
-  "SERVICES": {
-    "CARNIVAL": {
-      "APP_KEY": "12e4bea1d9b9a3fc5b7687d062a77c4ce45055e0"
-    },
-    "COMSCORE": {
-      "C2_VALUE": "7507054",
-      "PUBLISHER_SECRET_CODE": "7a4fa75513b461050f0c03910aaf27e2"
-    },
-    "INTELLICAST": {
-      "BASE_URL": "https://wsidata.weather.com/%s/%s/",
-      "SECRET_KEY": "743015686",
-      "VERSION": "200904-01"
-    },
-    "ICON": {
-      "URL": "http://t.gmg.io/weather.overhaul/new_images/png/wx_%s.png"
-    },
-    "KALTURA_PLAYKIT": {
-      "URL": "https://cdnapisec.kaltura.com/p/1636891/sp/%d/playManifest/entryId/%s/format/applehttp/protocol/https/a.m3u8",
-      "PARTNER_ID": 1636891,
-      "PLAYER_ID": 25345621,
-      "AD_BASE": "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/%s%s/%s&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]",
-      "AD_NETWORK": "15466288",
-      "AD_PREFIX": "/TEST/App/Weather"
-    },
-    "LOCATION_SEARCH": {
-      "BASE_URL": "https://wsidata.weather.com/%s/%s/Locations/Cities/",
-      "SECRET_KEY": "743015686",
-      "VERSION": "200904-01"
-    },
-    "MAX_MAP": {
-      "MAP_ID": "0001",
-      "MEMBER_ID": "1164",
-      "NEW_SDK_KEY": "7B4966DE-936F-4A88-BD45-95FDA697766F",
-      "SDK_KEY": "D780A3A1-57C7-4004-8093-F96F600B3397",
-      "TEMPLATE_ID": "0003"
-    },
-    "NOTIFICATION": {
-      "BASE_URL": "https://s3.amazonaws.com/notifications-api/weather/"
-    },
-    "REVEAL": {
-      "API_KEY": "",
-      "API_ENDPOINT_BASE" : "https://mapi.grahamdigital.com"
-    },
-    "VIDEO": {
-      "URL": "http://appfeeds.grahamdigital.com/KSAT/Video%20Forecast.json"
-    },
-    "WSI": {
-      "REGISTRATION_URL": "https://wsidata.weather.com/201303/en-us/Subscriptions/Register",
-      "DATA_URL": "https://wsidata.weather.com/201303/en-us/weather/alerts/%s",
-      "SITE_CODE": "307186571",
-      "PUSH": [
+    "AD_TAG": "/15466288/TEST/App/Sierra",
+    "SHOW_INTERSTITIAL_AD": true,
+    "CONFIG_URL": "https://s3.amazonaws.com/pnsdigital.com/weatherapp/DEMO/config.json",
+    "DEFAULT_LAT": 39.84619,
+    "DEFAULT_LON": -76.67163,
+    "GOOGLE_ANALYTICS_TAG": "UA-38690119-6",
+    "ITUNES_URL": "",
+    "MIN_VERSION": "2.1",
+    "IOS_FORCE_VERSION": "0.0",
+    "ANDROID_FORCE_VERSION": "0.0",
+    "MINIMUM_USAGE_FOR_RATING": 6,
+    "PUSH_ALERTS": [
         {
-          "TYPE": 7,
-          "SUB_TYPE": 131071,
-          "MAX_RANGE": 8046.72
-        },
-        {
-          "TYPE": 3,
-          "MAX_RANGE": 8046.72
-        },
-        {
-          "TYPE": 5,
-          "MIN_DBZ": 25,
-          "MAX_RANGE": 8046.72
+            "channel": "MetsUpdates",
+            "text": "THIS IS THE DEMO APP"
         }
-      ]
-    }
-  },
-  "STATION_CALLLETTERS": "DEMO",
-  "STRUCTURE": [
-    {
-      "category": "wsisdk_WeatherAlertsSevere",
-      "layer": "wsisdk_LayerRadar",
-      "legend_name": "legend_radar.png",
-      "legend_transparency": 90,
-      "loop": true,
-      "overlays": [
-        "wsisdk_OverlayStormTracks"
-      ],
-      "screen": "LiveRadar",
-      "title": "Live Radar",
-      "transparency": 30
-    },
-    {
-      "layer": "wsisdk_LayerHDSatelliteNAmerica",
-      "loop": true,
-      "screen": "LiveRadar",
-      "title": "Cloud Cover"
-    },
-    {
-      "category": "MenuAd",
-      "AD_TAG": "/15466288/TEST/App/Sierra"
-    },
-    {
-      "layer": "wsisdk_LayerRadarConusAndHDSatelliteNAmerica",
-      "loop": true,
-      "screen": "LiveRadar",
-      "title": "Radar Over Satellite"
-    },
-    {
-      "layer": "wsisdk_LayerTemperatureConus",
-      "legend_name": "legend_temperature.png",
-      "legend_transparency": 90,
-      "screen": "LiveRadar",
-      "title": "Temperatures"
-    },
-    {
-      "layer": "wsisdk_LayerWindSpeed",
-      "screen": "LiveRadar",
-      "title": "Winds"
-    },
-    {
-      "layer": "wsisdk_LayerWaterTemperature",
-      "screen": "LiveRadar",
-      "title": "Water Temperatures"
-    },
-    {
-      "layer": "wsisdk_LayerSnowCoverConus",
-      "legend_name": "legend_snow.png",
-      "legend_transparency": 90,
-      "screen": "LiveRadar",
-      "title": "Snow Cover"
-    },
-    {
-      "layer": "wsisdk_LayerRoadWeather",
-      "screen": "LiveRadar",
-      "title": "Road Weather"
-    },
-    {
-      "category": "wsisdk_WeatherAlertsSevere",
-      "layer": "wsisdk_LayerRadar",
-      "screen": "LiveRadar",
-      "title": "Severe Alerts",
-      "transparency": 30
-    },
-    {
-      "category": "wsisdk_WeatherAlertsFlood",
-      "layer": "wsisdk_LayerRadar",
-      "screen": "LiveRadar",
-      "title": "Flood Alerts",
-      "transparency": 30
-    },
-    {
-      "layer": "wsisdk_LayerRadar",
-      "overlays": [
-        "wsisdk_OverlayStormTracks"
-      ],
-      "screen": "LiveRadar",
-      "title": "Storm Tracks",
-      "transparency": 30
-    },
-    {
-      "overlays": [
-        "wsisdk_OverlayEarthquakes"
-      ],
-      "screen": "LiveRadar",
-      "title": "Earthquakes"
-    },
-    {
-      "category": "wsisdk_WeatherAlertsTropical",
-      "layer": "wsisdk_LayerHDSatelliteTropics",
-      "overlays": [
-        "wsisdk_OverlayTropicalTracks"
-      ],
-      "screen": "LiveRadar",
-      "title": "Tropical Storm Tracks"
-    },
-    {
-      "screen": "Today",
-      "title": "Today"
-    },
-    {
-      "screen": "Tomorrow",
-      "title": "Tomorrow"
-    },
-    {
-      "screen": "7DayOutlook",
-      "title": "10-Day Forecast"
-    },
-    {
-      "screen": "LocationSearch",
-      "title": "Search"
-    },
-    {
-      "screen": "webview",
-      "title": "News/Closings",
-      "url": "http://www.google.com"
-    },
-    {
-      "appSchema": "PNSDigitalKSATNewsReader://",
-      "iOSInstallURL": "https://itunes.apple.com/in/app/ksat.com-ksat-12-news/id426129542",
-      "packageName": "com.ksat.storm.pins",
-      "AndroidInstallURL": "https://play.google.com/store/apps/details?id=com.ksat.storm.pins",
-      "installPreview": "http://www.ksat.com/content/dam/pns/ksat/news/2014/12/21/12-21-chase-shooting.jpg.CROP.rectangle-feed16x9.jpg",
-      "openURL": "https://itunes.apple.com/in/app/ksat.com-ksat-12-news/id426129542",
-      "screen": "AppLink",
-      "title": "NewsReader"
-    },
-    {
-      "screen": "LocationSearch",
-      "title": "Location Search"
-    },
-    {
-      "screen": "Settings",
-      "title": "Settings"
-    }
-  ],
-  "MENU_LEFT": [
-    {
-      "screen": "LiveRadar",
-      "title": "Radar",
-      "map": {
-        "layer": "wsi_LayerRadar",
-        "overlays": [
-          "wsi_WeatherAlertsSevere"
-        ],
-        "legend_name": "legend_radar.png",
-        "legend_transparency": 90,
-        "loop": true,
-        "transparency": 30
-      }
-    },
-    {
-      "category": "MenuAd",
-      "AD_TAG": "/15466288/TEST/App/Sierra"
-    },
-    {
-      "screen": "Today",
-      "title": "Today"
-    },
-    {
-      "screen": "Tomorrow",
-      "title": "Tomorrow"
-    },
-    {
-      "screen": "7DayOutlook",
-      "title": "10-Day Forecast"
-    },
-    {
-      "screen": "Section",
-      "title": "Live Maps",
-      "AD_TAG": "/15466288/TEST/App/Sierra/Section_2",
-      "section": [
-        {
-          "title": "Storm Tracker",
-          "screen": "LiveRadar",
-          "AD_TAG": "/15466288/TEST/App/Sierra",
-          "map": {
-            "layer": "wsi_LayerRadar",
-            "overlays": [
-              "wsi_OverlayStormTracks"
-            ],
-            "transparency": 30
-          }
+    ],
+    "SERVICES": {
+        "CARNIVAL": {
+            "APP_KEY": "12e4bea1d9b9a3fc5b7687d062a77c4ce45055e0"
         },
-        {
-          "title": "Lightning",
-          "screen": "LiveRadar",
-          "AD_TAG": "/15466288/TEST/App/Sierra/Section_3",
-          "map": {
-            "layer": "wsi_LayerRadar",
-            "overlays": [
-              "wsi_OverlayLightning"
-            ],
-            "transparency": 30
-          }
+        "COMSCORE": {
+            "C2_VALUE": "7507054",
+            "PUBLISHER_SECRET_CODE": "7a4fa75513b461050f0c03910aaf27e2"
         },
-        {
-          "title": "Cloud Cover",
-          "screen": "LiveRadar",
-          "AD_TAG": "/15466288/TEST/App/Sierra/Section_4",
-          "map": {
-            "layer": "wsi_LayerHDSatelliteNAmerica",
-            "loop": true
-          }
+        "INTELLICAST": {
+            "BASE_URL": "https://wsidata.weather.com/%s/%s/",
+            "SECRET_KEY": "743015686",
+            "VERSION": "200904-01"
         },
-        {
-          "title": "Watches & Warnings",
-          "screen": "LiveRadar",
-          "AD_TAG": "/15466288/TEST/App/Sierra",
-          "map": {
-            "layer": "wsi_LayerRadar",
-            "overlays": [
-              "wsi_WeatherAlertsSevere"
-            ],
-            "transparency": 70
-          }
+        "ICON": {
+            "URL": "http://t.gmg.io/weather.overhaul/new_images/png/wx_%s.png"
         },
-        {
-          "title": "Flood Alerts",
-          "screen": "LiveRadar",
-          "AD_TAG": "/15466288/TEST/App/Sierra",
-          "map": {
-            "layer": "wsi_LayerRadar",
-            "overlays": [
-              "wsi_WeatherAlertsFlood"
+        "KALTURA_PLAYKIT": {
+            "URL": "https://cdnapisec.kaltura.com/p/1636891/sp/%d/playManifest/entryId/%s/format/applehttp/protocol/https/a.m3u8",
+            "PARTNER_ID": 1636891,
+            "PLAYER_ID": 25345621,
+            "AD_BASE": "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/%s%s/%s&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]",
+            "AD_NETWORK": "15466288",
+            "AD_PREFIX": "/TEST/App/Weather"
+        },
+        "LOCATION_SEARCH": {
+            "BASE_URL": "https://wsidata.weather.com/%s/%s/Locations/Cities/",
+            "SECRET_KEY": "743015686",
+            "VERSION": "200904-01"
+        },
+        "MAX_MAP": {
+            "MAP_ID": "0001",
+            "MEMBER_ID": "1164",
+            "NEW_SDK_KEY": "7B4966DE-936F-4A88-BD45-95FDA697766F",
+            "SDK_KEY": "D780A3A1-57C7-4004-8093-F96F600B3397",
+            "TEMPLATE_ID": "0003"
+        },
+        "NOTIFICATION": {
+            "BASE_URL": "https://s3.amazonaws.com/notifications-api/weather/"
+        },
+        "REVEAL": {
+            "API_KEY": "",
+            "API_ENDPOINT_BASE" : "https://mapi.grahamdigital.com"
+        },
+        "VIDEO": {
+            "URL": "http://appfeeds.grahamdigital.com/KSAT/Video%20Forecast.json"
+        },
+        "WSI": {
+            "REGISTRATION_URL": "https://wsidata.weather.com/201303/en-us/Subscriptions/Register",
+            "DATA_URL": "https://wsidata.weather.com/201303/en-us/weather/alerts/%s",
+            "SITE_CODE": "307186571",
+            "PUSH": [
+                {
+                    "TYPE": 7,
+                    "SUB_TYPE": 131071,
+                    "MAX_RANGE": 8046.72
+                },
+                {
+                    "TYPE": 3,
+                    "MAX_RANGE": 8046.72
+                },
+                {
+                    "TYPE": 5,
+                    "MIN_DBZ": 25,
+                    "MAX_RANGE": 8046.72
+                }
             ],
-            "transparency": 70
-          }
+            "REGISTRATION":{
+                "siteCode" : "307186571",
+                "pcl" : 2,
+                "plv" : 3,
+                "pushSettings" :[{
+                    "type" : 7,
+                    "subTypes": "1C703E043F844588182A066FE320A8425DFFFFFFFF"
+                },
+                {
+                    "type" : 3,
+                    "maxRange" : 8046.72
+                },
+                {
+                    "type" : 5,
+                    "maxRange" : 8046.72,
+                    "minDbz" : 25
+                }]
+            }
+        },
+        "STORMPINS": {
+            "APPLICATION_ID":"e6bb2b10-d5de-4f21-a0c6-e6452f5cee9a",
+            "API_ENDPOINT":"https://3k0wn6jfl6.execute-api.us-east-1.amazonaws.com/api",
+            "MEDIA_ENDPOINT":"https://bobcat.grahamdigital.com/",
+            "FORGOT_PASSWORD_URL":"https://www.clickondetroit.com/account/forgot_password?nav=off"
         }
-      ]
     },
-    {
-      "screen": "Section",
-      "title": "Hurricanes",
-      "AD_TAG": "/15466288/TEST/App/Sierra",
-      "section": [
+    "STATION_CALLLETTERS": "DEMO",
+    "MENU_LEFT": [
         {
-          "title": "Tracker",
-          "screen": "LiveRadar",
-          "map": {
-            "layer": "wsi_LayerHDSatelliteTropics",
-            "overlays": [
-              "wsi_OverlayTropicalTracks",
-              "wsi_WeatherAlertsTropical"
-            ],
-            "zoom": {
-              "zoom_x": 120,
-              "zoom_y": 30
-            },
-            "initial_coords": {
-              "lat": 20,
-              "lon": -75
+            "screen": "LiveRadar",
+            "title": "Radar",
+            "map": {
+                "layer": "wsi_LayerRadar",
+                "overlays": [
+                    "wsi_WeatherAlertsSevere"
+                ],
+                "legend_name": "legend_radar.png",
+                "legend_transparency": 90,
+                "loop": true,
+                "transparency": 30
             }
-          }
         },
         {
-          "title": "Tropical Alerts",
-          "screen": "LiveRadar",
-          "map": {
-            "layer": "wsi_LayerHDSatelliteTropics",
-            "overlays": [
-              "wsi_OverlayTropicalTracks",
-              "wsi_WeatherAlertsTropical"
-            ],
-            "zoom": {
-              "zoom_x": 120,
-              "zoom_y": 30
-            },
-            "initial_coords": {
-              "lat": 20,
-              "lon": -75
-            }
-          }
+            "category": "MenuAd",
+            "AD_TAG": "/15466288/TEST/App/Sierra"
         },
         {
-          "title": "Marine Alerts",
-          "screen": "LiveRadar",
-          "map": {
-            "layer": "wsi_LayerRadar",
-            "overlays": [
-              "wsi_WeatherAlertsMarine"
-            ],
-            "transparency": 70,
-            "zoom": {
-              "zoom_x": 120,
-              "zoom_y": 30
-            },
-            "initial_coords": {
-              "lat": 20,
-              "lon": -75
-            }
-          }
+            "screen": "Today",
+            "title": "Today"
         },
         {
-          "screen": "AppLink",
-          "title": "Hurricane App",
-          "data": {
-            "appName": "Local 4 StormPins - WDIV",
-            "appSchema": "fb1097973390260498://",
-            "iOSInstallURL": "itms-apps://itunes.apple.com/us/app/local-4-stormpins-wdiv/id875010616",
-            "packageName": "com.wdiv.storm.pins",
-            "AndroidInstallURL": "https://play.google.com/store/apps/details?id=com.wdiv.storm.pins",
-            "installPreview": "http://is5.mzstatic.com/image/thumb/Purple62/v4/2b/ee/09/2bee0921-3f53-2a89-59d3-6d9b12611292/source/175x175bb.jpg"
-          }
-        }
-      ]
-    },
-    {
-      "screen": "Section",
-      "title": "More Maps",
-      "AD_TAG": "/15466288/TEST/App/Sierra",
-      "section": [
-        {
-          "title": "Temperatures",
-          "screen": "LiveRadar",
-          "map": {
-            "layer": "wsi_LayerTemperatureConus",
-            "legend_name": "legend_temperature.png",
-            "legend_transparency": 90
-          }
+            "screen": "Tomorrow",
+            "title": "Tomorrow"
         },
         {
-          "title": "Snow Cover",
-          "screen": "LiveRadar",
-          "map": {
-            "layer": "wsi_LayerSnowCoverConus",
-            "legend_name": "legend_snow.png",
-            "legend_transparency": 90
-          }
+            "screen": "7DayOutlook",
+            "title": "10-Day Forecast"
         },
         {
-          "title": "Earthquakes",
-          "screen": "LiveRadar",
-          "map": {
-            "overlays": [
-              "wsi_OverlayEarthquakes"
+            "screen": "Section",
+            "title": "Live Maps",
+            "AD_TAG": "/15466288/TEST/App/Sierra/Section_2",
+            "section": [
+                {
+                    "title": "Storm Tracker",
+                    "screen": "LiveRadar",
+                    "AD_TAG": "/15466288/TEST/App/Sierra",
+                    "map": {
+                        "layer": "wsi_LayerRadar",
+                        "overlays": [
+                            "wsi_OverlayStormTracks"
+                        ],
+                        "transparency": 30
+                    }
+                },
+                {
+                    "title": "Lightning",
+                    "screen": "LiveRadar",
+                    "AD_TAG": "/15466288/TEST/App/Sierra/Section_3",
+                    "map": {
+                        "layer": "wsi_LayerRadar",
+                        "overlays": [
+                            "wsi_OverlayLightning"
+                        ],
+                        "transparency": 30
+                    }
+                },
+                {
+                    "title": "Cloud Cover",
+                    "screen": "LiveRadar",
+                    "AD_TAG": "/15466288/TEST/App/Sierra/Section_4",
+                    "map": {
+                        "layer": "wsi_LayerHDSatelliteNAmerica",
+                        "loop": true
+                    }
+                },
+                {
+                    "title": "Watches & Warnings",
+                    "screen": "LiveRadar",
+                    "AD_TAG": "/15466288/TEST/App/Sierra",
+                    "map": {
+                        "layer": "wsi_LayerRadar",
+                        "overlays": [
+                            "wsi_WeatherAlertsSevere"
+                        ],
+                        "transparency": 70
+                    }
+                },
+                {
+                    "title": "Flood Alerts",
+                    "screen": "LiveRadar",
+                    "AD_TAG": "/15466288/TEST/App/Sierra",
+                    "map": {
+                        "layer": "wsi_LayerRadar",
+                        "overlays": [
+                            "wsi_WeatherAlertsFlood"
+                        ],
+                        "transparency": 70
+                    }
+                }
             ]
-          }
         },
         {
-          "title": "Road Weather",
-          "screen": "LiveRadar",
-          "map": {
-            "layer": "wsi_LayerRoadWeather",
-            "legend_name": "legend_roadWeather",
-            "legend_transparency": 90
-          }
+            "screen": "Section",
+            "title": "Hurricanes",
+            "AD_TAG": "/15466288/TEST/App/Sierra",
+            "section": [
+                {
+                    "title": "Tracker",
+                    "screen": "LiveRadar",
+                    "map": {
+                        "layer": "wsi_LayerHDSatelliteTropics",
+                        "overlays": [
+                            "wsi_OverlayTropicalTracks",
+                            "wsi_WeatherAlertsTropical"
+                        ],
+                        "zoom": {
+                            "zoom_x": 120,
+                            "zoom_y": 30,
+                            "zoom_level": 2.2
+                        },
+                        "initial_coords": {
+                            "lat": 20,
+                            "lon": -75
+                        }
+                    }
+                },
+                {
+                    "title": "Tropical Alerts",
+                    "screen": "LiveRadar",
+                    "map": {
+                        "layer": "wsi_LayerHDSatelliteTropics",
+                        "overlays": [
+                            "wsi_OverlayTropicalTracks",
+                            "wsi_WeatherAlertsTropical"
+                        ],
+                        "zoom": {
+                            "zoom_x": 120,
+                            "zoom_y": 30,
+                            "zoom_level": 2.2
+                        },
+                        "initial_coords": {
+                            "lat": 20,
+                            "lon": -75
+                        }
+                    }
+                },
+                {
+                    "title": "Marine Alerts",
+                    "screen": "LiveRadar",
+                    "map": {
+                        "layer": "wsi_LayerRadar",
+                        "overlays": [
+                            "wsi_WeatherAlertsMarine"
+                        ],
+                        "transparency": 70,
+                        "zoom": {
+                            "zoom_x": 120,
+                            "zoom_y": 30,
+                            "zoom_level": 2.2
+                        },
+                        "initial_coords": {
+                            "lat": 20,
+                            "lon": -75
+                        }
+                    }
+                },
+                {
+                    "screen": "AppLink",
+                    "title": "Hurricane App",
+                    "data": {
+                        "appName": "Local 4 StormPins - WDIV",
+                        "appSchema": "fb1097973390260498://",
+                        "iOSInstallURL": "itms-apps://itunes.apple.com/us/app/local-4-stormpins-wdiv/id875010616",
+                        "packageName": "com.wdiv.storm.pins",
+                        "AndroidInstallURL": "https://play.google.com/store/apps/details?id=com.wdiv.storm.pins",
+                        "installPreview": "http://is5.mzstatic.com/image/thumb/Purple62/v4/2b/ee/09/2bee0921-3f53-2a89-59d3-6d9b12611292/source/175x175bb.jpg"
+                    }
+                }
+            ]
         },
         {
-          "title": "Wind Speed",
-          "screen": "LiveRadar",
-          "map": {
-            "layer": "wsi_LayerWindSpeedLegacy",
-            "legend_name": "legend_windSpeed.png",
-            "legend_transparency": 90
-          }
+            "screen": "Section",
+            "title": "More Maps",
+            "AD_TAG": "/15466288/TEST/App/Sierra",
+            "section": [
+                {
+                    "title": "Temperatures",
+                    "screen": "LiveRadar",
+                    "map": {
+                        "layer": "wsi_LayerTemperatureConus",
+                        "legend_name": "legend_temperature.png",
+                        "legend_transparency": 90
+                    }
+                },
+                {
+                    "title": "Snow Cover",
+                    "screen": "LiveRadar",
+                    "map": {
+                        "layer": "wsi_LayerSnowCoverConus",
+                        "legend_name": "legend_snow.png",
+                        "legend_transparency": 90
+                    }
+                },
+                {
+                    "title": "Earthquakes",
+                    "screen": "LiveRadar",
+                    "map": {
+                        "overlays": [
+                            "wsi_OverlayEarthquakes"
+                        ]
+                    }
+                },
+                {
+                    "title": "Road Weather",
+                    "screen": "LiveRadar",
+                    "map": {
+                        "layer": "wsi_LayerRoadWeather",
+                        "legend_name": "legend_roadWeather",
+                        "legend_transparency": 90
+                    }
+                },
+                {
+                    "title": "Wind Speed",
+                    "screen": "LiveRadar",
+                    "map": {
+                        "layer": "wsi_LayerWindSpeedLegacy",
+                        "legend_name": "legend_windSpeed.png",
+                        "legend_transparency": 90
+                    }
+                }
+            ]
+        },
+        {
+            "screen": "StormPins",
+            "title": "StormPins",
+            "AD_TAG": "/15466288/TEST/App/Sierra",
+            "data": {
+                "appName": "Local 4 StormPins - WDIV",
+                "appSchema": "fb1097973390260498://",
+                "iOSInstallURL": "itms-apps://itunes.apple.com/us/app/local-4-stormpins-wdiv/id875010616",
+                "packageName": "com.wdiv.storm.pins",
+                "AndroidInstallURL": "https://play.google.com/store/apps/details?id=com.wdiv.storm.pins",
+                "installPreview": "http://is5.mzstatic.com/image/thumb/Purple62/v4/2b/ee/09/2bee0921-3f53-2a89-59d3-6d9b12611292/source/175x175bb.jpg"
+            }
+        },
+        {
+            "screen": "WeatherNews",
+            "title": "Weather News",
+            "AD_TAG": "/15466288/TEST/App/Sierra/Section_5"
+        },
+        {
+            "screen": "Settings",
+            "title": "Settings",
+            "AD_TAG": "/15466288/TEST/App/Sierra"
+        },
+        {
+            "category": "MenuAd",
+            "AD_TAG": "/15466288/TEST/App/Sierra"
         }
-      ]
-    },
-    {
-      "screen": "AppLink",
-      "title": "StormPins",
-      "AD_TAG": "/15466288/TEST/App/Sierra",
-      "data": {
-        "appName": "Local 4 StormPins - WDIV",
-        "appSchema": "fb1097973390260498://",
-        "iOSInstallURL": "itms-apps://itunes.apple.com/us/app/local-4-stormpins-wdiv/id875010616",
-        "packageName": "com.wdiv.storm.pins",
-        "AndroidInstallURL": "https://play.google.com/store/apps/details?id=com.wdiv.storm.pins",
-        "installPreview": "http://is5.mzstatic.com/image/thumb/Purple62/v4/2b/ee/09/2bee0921-3f53-2a89-59d3-6d9b12611292/source/175x175bb.jpg"
-      }
-    },
-    {
-      "screen": "WeatherNews",
-      "title": "Weather News",
-      "AD_TAG": "/15466288/TEST/App/Sierra/Section_5"
-    },
-    {
-      "screen": "Settings",
-      "title": "Settings",
-      "AD_TAG": "/15466288/TEST/App/Sierra"
-    },
-    {
-      "category": "MenuAd",
-      "AD_TAG": "/15466288/TEST/App/Sierra"
-    }
-  ]
+    ]
 }
+
