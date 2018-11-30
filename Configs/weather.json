@@ -103,7 +103,7 @@
         },
         "STORMPINS": {
             "APPLICATION_ID":"e6bb2b10-d5de-4f21-a0c6-e6452f5cee9a",
-            "API_ENDPOINT":"https://3k0wn6jfl6.execute-api.us-east-1.amazonaws.com/api",
+            "API_ENDPOINT":"https://8dnx6cpzp1.execute-api.us-east-1.amazonaws.com/api",
             "MEDIA_ENDPOINT":"https://bobcat.grahamdigital.com/",
             "FORGOT_PASSWORD_URL":"https://www.clickondetroit.com/account/forgot_password?nav=off"
         }
