@@ -1,7 +1,7 @@
 {
     "AD_TAG": "/15466288/TEST/App/Sierra",
     "SHOW_INTERSTITIAL_AD": true,
-    "CONFIG_URL": "https://s3.amazonaws.com/pnsdigital.com/weatherapp/DEMO/config.json",
+    "CONFIG_URL": "https://github.com/mobilegmg/DemoConfigs/blob/master/Configs/weather.json",
     "DEFAULT_LAT": 39.84619,
     "DEFAULT_LON": -76.67163,
     "GOOGLE_ANALYTICS_TAG": "UA-38690119-6",
