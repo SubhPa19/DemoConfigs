@@ -57,13 +57,13 @@
           },
           {
             "SCREEN": "SierraFeed",
-            "TITLE": "Demo Sierra Feed",
+            "TITLE": "Demo Sierra Feed 1",
             "AD_TAG": "/15466288/TEST/App/Sierra/Section_2",
             "URL": "http://appfeeds.grahamdigital.com/sierra/DEMO/groups.json"
           },
           {
             "SCREEN": "StormPins",
-            "TITLE": "StormPins",
+            "TITLE": "Storm Pins",
             "AD_TAG": "/15466288/TEST/App/Sierra/Section_2",
             "URL": "http://appfeeds.grahamdigital.com/sierra/DEMO/groups.json"
           },
