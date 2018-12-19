@@ -62,6 +62,12 @@
             "URL": "http://appfeeds.grahamdigital.com/sierra/DEMO/groups.json"
           },
           {
+            "SCREEN": "StormPins",
+            "TITLE": "StormPins",
+            "AD_TAG": "/15466288/TEST/App/Sierra/Section_2",
+            "URL": "http://appfeeds.grahamdigital.com/sierra/DEMO/groups.json"
+          },
+          {
             "SCREEN": "traffic",
             "TITLE": "Traffic News",
             "AD_TAG": "/15466288/TEST/App/Sierra/Section_3",
