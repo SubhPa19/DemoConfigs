@@ -20,7 +20,7 @@
       "secondaryUrl": "Top%20Stories",
       "header": {
         "type": "html",
-        "url": "http://gmg-elections.s3.amazonaws.com/dev/embed/ksat.html"
+        "url": "http://gmg-elections.s3.amazonaws.com/2018headers/kprc.html"
       }
     },
     {
@@ -28,7 +28,8 @@
       "title": "Watch Live",
       "AD_TAG": "/15466288/WKMG/Livestream",
       "assetKey" : "yBZZpy3-TOir4BDyMWZ2hQ",
-      "hlsURL": "https://pubads.g.doubleclick.net/ssai/event/yBZZpy3-TOir4BDyMWZ2hQ/master.m3u8"
+      "hlsURL": "https://pubads.g.doubleclick.net/ssai/event/yBZZpy3-TOir4BDyMWZ2hQ/master.m3u8",
+      "url": "https://www.clickorlando.com/live/news-6-watch-live-now"
     },
     {
       "screen": "HLSVideo",
@@ -348,6 +349,14 @@
       "DYNAMODB_SECTIONS_TABLE": "ksatuat_appfeeds_section",
       "REGION": "us-east-1",
       "POOL_ID": "us-east-1:cdfaf381-3f15-490f-b7fa-b9a4d904484c"
+    },
+    "AWS": {
+      "POOL_ID": "us-east-1:be5eb4cc-414f-4bb1-a342-3c02ea4bd817",
+      "REGION": "USEast1"
+    },
+    "YOUTUBE": {
+      "KEY": "AIzaSyB2rKwU8re8HHchu5oyI9M5ILdc6-2nLMg",
+      "ENABLED": true
     }
   },
   "PUSH_ALERTS_CATEGORIES": [
