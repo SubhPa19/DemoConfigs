@@ -153,8 +153,12 @@
       "AD_TAG": "/15466288/TEST/App/Sierra"
     },
     {
-      "screen": "Today",
-      "title": "Today"
+      "screen": "Today1",
+      "title": "Today1"
+    },
+    {
+      "screen": "Testing1",
+      "title": "Testing1"
     },
     {
       "screen": "Tomorrow",
