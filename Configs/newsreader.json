@@ -1,101 +1,223 @@
 {
   "CONFIG_URL": "https://raw.githubusercontent.com/mobilegmg/DemoConfigs/master/Configs/newsreader.json",
-  "BASE_URL": "http://appfeeds.grahamdigital.com/KSATUAT/",
-  "APPLICATION_GROUP": "group.PNSDigital.TrailblazerEnterprise",
+  "BASE_URL": "http://appfeeds.grahamdigital.com/WPLG/",
+  "APPLICATION_GROUP": "group.grahamdigital.newsreader.wplg",
   "WIDGET_RELATIVE_URL": "Widget.json",
   "WEATHER": {
-    "APP_LINK": "PNSDigitalKSATWeather://",
-    "LINK_IOS": "itms-apps://itunes.apple.com/us/app/your-weather-authority-for/id706099804",
-    "LINK_ANDROID": "com.pnsdigital.weather.ksat"
+    "APP_LINK": "WPLGWeather://",
+    "LINK_IOS": "itms-apps://itunes.apple.com/us/app/wplg-local-10-weather/id706187032",
+    "LINK_ANDROID": "com.pnsdigital.weather.wplg"
   },
   "WEB": {
-    "URL": "http://ksat.gmg-web.lakana-uat.com/"
+    "URL": "https://www.local10.com/"
   },
   "MENU_LEFT": [
     {
       "screen": "topStories",
       "title": "Top Stories",
-      "AD_TAG": "/15466288/TEST/App/Newsreader",
+      "AD_TAG": "/15466288/WPLG/App/Newsreader/Top_Stories",
       "url": "Top%20Stories.json",
       "secondaryUrl": "Top%20Stories",
-      "header": {
-        "type": "html",
-        "url": "http://gmg-elections.s3.amazonaws.com/2018headers/kprc.html"
-      }
-    },
-    {
-      "screen": "DAIVideo",
-      "title": "Watch Live",
-      "AD_TAG": "/15466288/WKMG/Livestream",
-      "assetKey" : "yBZZpy3-TOir4BDyMWZ2hQ",
-      "hlsURL": "https://pubads.g.doubleclick.net/ssai/event/yBZZpy3-TOir4BDyMWZ2hQ/master.m3u8",
-      "url": "https://www.clickorlando.com/live/news-6-watch-live-now"
-    },
-    {
-      "screen": "HLSVideo",
-      "title": "Test HLS",
-      "url": "https://tungsten.aaplimg.com/VOD/bipbop_adv_example_hevc/master.m3u8"
+      "arc_url": "https://www.local10.com/appfeeds/collection/G62SLACZ7FGNZOZKHA7HEKXG5Q/?outputType=appfeeds"
     },
     {
       "screen": "News",
       "title": "News",
-      "AD_TAG": "/15466288/TEST/App/Newsreader/News",
+      "AD_TAG": "/15466288/WPLG/App/Newsreader",
       "section": [
-        {
-          "screen": "webview",
-          "subtitle": "Select Your Race",
-          "url": "http://gmg-elections.s3.amazonaws.com/ksat_mobile/index.html"
-        },
-        {
-          "screen": "HLSVideo",
-          "subtitle": "UpLynk LiveStream",
-          "url": "http://content.uplynk.com/channel/aeed2b5b97494129ad22b446d6aa0ce4.m3u8?ad=graham_test"
-        },
-        {
-          "subtitle": "Latest Headlines",
-          "url": "News.json",
-          "secondaryUrl": "News",
-          "header": {
-            "type": "html",
-            "url": "http://t.gmg.io/header/test_header.html"
-          }
-        },
         {
           "subtitle": "Local News",
           "url": "Local.json",
-          "secondaryUrl": "Local"
+          "secondaryUrl": "Local",
+          "arc_url": "https://www.local10.com/appfeeds/topic/local/?outputType=appfeeds"
         },
         {
-          "subtitle": "Defenders",
-          "url": "Defenders.json",
-          "secondaryUrl": "Defenders"
+          "subtitle": "U.S./World News",
+          "url": "National.json",
+          "secondaryUrl": "National",
+          "arc_url": "https://www.local10.com/appfeeds/topic/national/?outputType=appfeeds"
         },
         {
-          "subtitle": "Crime Fighters",
-          "url": "Crime%20Fighters.json",
-          "secondaryUrl": "Crime%20Fighters"
+          "subtitle": "Local 10 Investigates",
+          "url": "Local%2010%20Investigates.json",
+          "secondaryUrl": "Local%2010%20Investigates",
+          "arc_url": "https://gmg-wplg-prod.cdn.arcpublishing.com/appfeeds/topic/investigates/?outputType=appfeeds"
         },
         {
-          "subtitle": "Behind The Kitchen Door",
-          "url": "Behind%20The%20Kitchen%20Door.json",
-          "secondaryUrl": "Behind%20The%20Kitchen%20Door"
-        },
-        {
-          "subtitle": "Consumer",
-          "url": "Consumer.json",
-          "secondaryUrl": "Consumer"
+          "subtitle": "Cuba News",
+          "url": "Cuba.json",
+          "secondaryUrl": "Cuba",
+          "arc_url": "https://www.local10.com/appfeeds/topic/cuba/?outputType=appfeeds"
         },
         {
           "subtitle": "Politics",
           "url": "Politics.json",
-          "secondaryUrl": "Politics"
+          "secondaryUrl": "Politics",
+          "arc_url": "https://www.local10.com/appfeeds/topic/politics/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "Health",
+          "url": "Health.json",
+          "secondaryUrl": "Health",
+          "arc_url": "https://www.local10.com/appfeeds/section/health/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "Education",
+          "url": "Education.json",
+          "secondaryUrl": "Education",
+          "arc_url": "https://www.local10.com/appfeeds/topic/education/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "Money",
+          "url": "Money.json",
+          "secondaryUrl": "Money",
+          "arc_url": "https://www.local10.com/appfeeds/topic/money/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "This Week In South Florida",
+          "url": "This%20Week%20In%20South%20Florida.json",
+          "secondaryUrl": "This%20Week%20In%20South%20Florida",
+          "arc_url": "https://www.local10.com/appfeeds/topic/this-week-in-south-florida/?outputType=appfeeds"
+        },
+        {
+          "screen": "webview",
+          "title": "Florida Files",
+          "url": "https://www.local10.com/florida-files"
+        }
+
+      ]
+    },
+    {
+      "screen": "DAIVideo",
+      "title": "Watch Live",
+      "AD_TAG": "/15466288/WPLG/Livestream",
+      "assetKey" : "sV-Br09aQKCXBpQXqDM0Bg",
+      "hlsURL": "https://pubads.g.doubleclick.net/ssai/event/sV-Br09aQKCXBpQXqDM0Bg/master.m3u8",
+      "url": "https://www.local10.com/news/2019/11/11/watch-local-10-news-live/"
+    },
+    {
+      "screen": "sports",
+      "title": "Sports",
+      "AD_TAG": "/15466288/WPLG/App/Newsreader",
+      "section": [
+        {
+          "subtitle": "Sports Headlines",
+          "url": "Sports.json",
+          "secondaryUrl": "Sports",
+          "arc_url": "https://www.local10.com/appfeeds/section/sports/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "Miami Heat",
+          "url": "Heat.json",
+          "secondaryUrl": "Heat",
+          "arc_url": "https://www.local10.com/appfeeds/section/sports/topic/heat/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "Miami Dolphins",
+          "url": "Dolphins.json",
+          "secondaryUrl": "Dolphins",
+          "arc_url": "https://gmg-wplg-prod.cdn.arcpublishing.com/appfeeds/section/sports/topic/dolphins/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "Miami Marlins",
+          "url": "Marlins.json",
+          "secondaryUrl": "Marlins",
+          "arc_url": "https://www.local10.com/appfeeds/section/sports/topic/marlins/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "Florida Panthers",
+          "url": "Panthers.json",
+          "secondaryUrl": "Panthers",
+          "arc_url": "https://www.local10.com/appfeeds/section/sports/topic/panthers/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "College Basketball",
+          "url": "College%20Basketball.json",
+          "secondaryUrl": "College%20Basketball",
+          "arc_url": "https://www.local10.com/appfeeds/topic/college_basketball/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "College Football",
+          "url": "College%20Football.json",
+          "AD_TAG": "/15466288/WPLG/App/Newsreader/Sports/College_Football",
+          "secondaryUrl": "College%20Football",
+          "arc_url": "https://www.local10.com/appfeeds/topic/college_football/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "Soccer",
+          "url": "Soccer.json",
+          "secondaryUrl": "Soccer",
+          "arc_url": "https://www.local10.com/appfeeds/topic/soccer/?outputType=appfeeds"
+        }
+      ]
+    },
+    {
+      "screen": "Entertainment",
+      "title": "Entertainment",
+      "AD_TAG": "/15466288/WPLG/App/Newsreader",
+      "section": [
+        {
+          "subtitle": "Entertainment Headlines",
+          "url": "Entertainment.json",
+          "secondaryUrl": "Entertainment",
+          "arc_url": "https://www.local10.com/appfeeds/section/education/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "SoFlo Taste",
+          "url": "SoFlo%20Taste.json",
+          "secondaryUrl": "SoFlo%20Taste",
+          "arc_url": "https://www.local10.com/appfeeds/topic/soflo_taste/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "Contests",
+          "url": "Contests.json",
+          "secondaryUrl": "Contests",
+          "arc_url": "https://www.local10.com/appfeeds/section/contests/?outputType=appfeeds"
+        }
+      ]
+    },
+    {
+      "screen": "Lifestyle",
+      "title": "Lifestyle",
+      "AD_TAG": "/15466288/WPLG/App/Newsreader",
+      "section": [
+        {
+          "subtitle": "Lifestyle Headlines",
+          "url": "Lifestyle.json",
+          "secondaryUrl": "Lifestyle",
+          "arc_url": "https://www.local10.com/appfeeds/section/lifestyle/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "Family",
+          "url": "Family.json",
+          "secondaryUrl": "Family",
+          "arc_url": "https://www.local10.com/appfeeds/topic/family/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "Technology",
+          "url": "Tech.json",
+          "secondaryUrl": "Tech",
+          "arc_url": "https://www.local10.com/appfeeds/topic/tech/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "Pets",
+          "url": "Pets.json",
+          "secondaryUrl": "Pets",
+          "arc_url": "https://www.local10.com/appfeeds/section/pets/?outputType=appfeeds"
+        },
+        {
+          "subtitle": "Food",
+          "url": "Food.json",
+          "secondaryUrl": "Food",
+          "arc_url": "https://www.local10.com/appfeeds/topic/food/?outputType=appfeeds"
         }
       ]
     },
     {
       "screen": "traffic",
       "title": "Traffic",
-      "AD_TAG": "/15466288/TEST/App/Newsreader",
+      "AD_TAG": "/15466288/WPLG/App/Newsreader",
+      "url": "https://www.local10.com/traffic",
       "map": {
         "layer": "wsisdk_LayerTrafficFlowAndRadar",
         "overlays": [
@@ -110,115 +232,40 @@
       "title": "Weather"
     },
     {
-      "screen": "applink",
-      "title": "Houston Life",
-      "link": {
-        "app": "HoustonLife://",
-        "app_name": "Houston Life",
-        "ios": "itms-apps://itunes.apple.com/by/app/houston-life/id1150176156",
-        "android": ""
-      }
-    },
-    {
-      "screen": "sports",
-      "title": "Sports",
-      "AD_TAG": "/15466288/TEST/App/Newsreader",
+      "screen": "station",
+      "title": "Station",
+      "AD_TAG": "/15466288/WPLG/App/Newsreader",
       "section": [
         {
-          "subtitle": "Sports Headlines",
-          "url": "Sports.json",
-          "secondaryUrl": "Sports"
+          "subtitle": "Station",
+          "url": "Station.json",
+          "secondaryUrl": "Station",
+          "arc_url": "https://www.local10.com/appfeeds/topic/station/?outputType=appfeeds"
         },
         {
-          "subtitle": "Cowboys",
-          "url": "Cowboys.json",
-          "AD_TAG": "/15466288/TEST/App/Newsreader/News",
-          "secondaryUrl": "Cowboys"
-        },
-        {
-          "subtitle": "Texans",
-          "url": "Texans.json",
-          "secondaryUrl": "Texans"
-        },
-        {
-          "subtitle": "Spurs",
-          "url": "Spurs.json",
-          "secondaryUrl": "Spurs"
-        },
-        {
-          "subtitle": "Instant Replay",
-          "url": "Instant%20Replay.json",
-          "secondaryUrl": "Instant%20Replay"
+          "subtitle": "Careers",
+          "url": "Careers.json",
+          "secondaryUrl": "Careers",
+          "arc_url": "https://www.local10.com/appfeeds/topic/careers/?outputType=appfeeds"
         }
       ]
     },
     {
-      "screen": "Entertainment",
-      "title": "Entertainment",
-      "AD_TAG": "/15466288/TEST/App/Newsreader",
-      "section": [
-        {
-          "subtitle": "Entertainment Headlines",
-          "url": "Entertainment.json",
-          "secondaryUrl": "Entertainment"
-        }
-      ]
+      "screen": "webview",
+      "title": "Contact WPLG",
+      "url": "https://www.local10.com/contact",
+      "AD_TAG": "/15466288/WPLG/App/Newsreader"
     },
     {
-      "screen": "Lifestyle",
-      "title": "Lifestyle",
-      "AD_TAG": "/15466288/TEST/App/Newsreader",
-      "section": [
-        {
-          "subtitle": "Lifestyle Headlines",
-          "url": "Lifestyle.json",
-          "secondaryUrl": "Lifestyle"
-        },
-        {
-          "subtitle": "Health",
-          "url": "Health.json",
-          "secondaryUrl": "Health"
-        },
-        {
-          "subtitle": "Military",
-          "url": "Military.json",
-          "secondaryUrl": "Military"
-        }
-      ]
-    },
-    {
-      "screen": "Marketplace",
-      "title": "Marketplace",
-      "AD_TAG": "/15466288/TEST/App/Newsreader",
-      "section": [
-        {
-          "subtitle": "Marketplace Headlines",
-          "url": "Marketplace.json",
-          "secondaryUrl": "Marketplace"
-        },
-        {
-          "subtitle": "Automotive",
-          "url": "Automotive.json",
-          "secondaryUrl": "Automotive"
-        },
-        {
-          "screen": "webview",
-          "title": "HEB Kitchen",
-          "AD_TAG": "/15466288/TEST/App/Newsreader",
-          "url": "http://uat-ksat.endplay.com/content/pns/ksat/marketplace/heb-backyard-kitchen.html?layout=simple"
-        },
-        {
-          "screen": "webview",
-          "title": "HEB Kitchen2",
-          "AD_TAG": "/15466288/TEST/App/Newsreader",
-          "url": ""
-        }
-      ]
+      "screen": "webview",
+      "title": "Search",
+      "url": "https://www.local10.com/search",
+      "AD_TAG": "/15466288/WPLG/App/Newsreader"
     },
     {
       "screen": "settings",
       "title": "Settings",
-      "AD_TAG": "/15466288/TEST/App/Newsreader"
+      "AD_TAG": "/15466288/WPLG/App/Newsreader"
     }
   ],
   "HOMEPAGE_URL": "Top%20Stories.json",
@@ -227,25 +274,27 @@
   "BREAKINGNEWS_URL": "Breaking%20News.json",
   "LIVESTREAM_URL": "Livestream.json",
   "ARTICLE_DATA_URL": "article/%s",
-  "GOOGLE_ANALYTICS_TRACKING_ID": "UA-17700582-11",
-  "AD_TAG": "/15466288/TEST/App/Newsreader",
-  "LIVESTREAM_AD_TAG" : "/15466288/WKMG/Livestream",
-  "ANVATO_PLAYER_URL": "http://content.uplynk.com/channel/aeed2b5b97494129ad22b446d6aa0ce4.m3u8?ad=graham_test",
-  "VAR_PLAYSTORE_URL": "https://play.google.com/store/apps/details?id=",
-  "STATION": "KSAT",
-  "QUANTCAST_KEY": "18kcfxiuxoeiny00-jhumrbwspt3qrqs2",
+  "AD_TAG": "/15466288/WPLG/App/Newsreader",
+  "ANVATO_PLAYER_URL": "https://pubads.g.doubleclick.net/ssai/event/sV-Br09aQKCXBpQXqDM0Bg/master.m3u8",
+  "VAR_PLAYSTORE_URL": "https://play.google.com/store/apps/details?id=com.ibsys.app.pns_mia",
+  "DEFAULT_LAT": 25.78,
+  "DEFAULT_LON": -80.22,
+  "STATION": "WPLG",
+  "QUANTCAST_KEY": "18kcfxiuxoeiny00-swc8565cskqupjd5",
   "DATA_REFRESH_INTERVAL": 600,
-  "DATA_CACHE_INTERVAL": 24,
   "MINIMUM_USAGE_FOR_RATING": 6,
-  "MIN_VERSION": "0.0",
+  "WEATHER_APP_LINK": "WPLGWeather://",
+  "WEATHER_LINK_IOS": "itms-apps://itunes.apple.com/us/app/wplg-local-10-weather/id706187032",
+  "MIN_VERSION": "21000",
   "IOS_FORCE_VERSION": "0.0",
   "ANDROID_FORCE_VERSION": "0.0",
-  "ITUNES_URL": "https://itunes.apple.com/in/app/ksat.com-ksat-12-news/id426129542",
-  "TWITTER_HANDLE": "KSATnews",
+  "ITUNES_URL": "https://itunes.apple.com/us/app/wplg-local-10-breaking-news/id439692932?mt=8",
   "SHOW_INTERSTITIAL_AD": true,
-  "TERMS_OF_USE": "http://www.ksat.com/station/termsofuse",
-  "PRIVACY_POLICY": "http://www.ksat.com/station/privacy",
-  "REMOVE_CACHE_DATA": true,
+  "TWITTER_HANDLE": "WPLGLocal10",
+  "WEB_URL": "https://www.local10.com/",
+  "TERMS_OF_USE": "https://www.local10.com/station/termsofuse",
+  "PRIVACY_POLICY": "https://www.local10.com/station/privacy",
+  "REMOVE_CACHE_DATA": false,
   "PUSH_ALERTS": [
     {
       "text": "Breaking News",
@@ -296,8 +345,8 @@
       "VERSION": "200904-01",
       "SECRET_KEY": "213605834",
       "DEFAULT_LOCATION": [
-        29.422,
-        -98.497
+        25.78,
+        -80.22
       ]
     },
     "NOTIFICATION": {
@@ -307,48 +356,39 @@
       "BASE_URL": "http://media.ksat.com/weather/icons/60_clear/wx_%s.png"
     },
     "MAX_MAP": {
-      "MEMBER_ID": "1175",
-      "MAP_ID": "0002",
+      "MEMBER_ID": "1164",
+      "MAP_ID": "0020",
       "TEMPLATE_ID": "0003",
       "SDK_KEY": "3C3388B3-D633-4D42-A136-C2B6DF33BA18"
     },
     "OUTBRAIN": {
       "PARTNER_KEY": "CLICK2APAB7FE686CJLA026P6",
       "WIDGET_ID": "SDK_1",
-      "TEST_MODE_ON": true
+      "TEST_MODE_ON": false
     },
     "REVEAL": {
-      "API_KEY": "5AAB12B6B65B0E51E363AB4CE83D829BCD1A028A81B28CDFE2496D",
-      "API_ENDPOINT_BASE" : "https://mapi.grahamdigital.com",
-      "BEACONS": {
-        "97faaca4-d7f1-416d-a5a4-e922dc6edb29.1.1" : "Green",
-        "97faaca4-d7f1-416d-a5a4-e922dc6edb29.1.6" : "White",
-        "97faaca4-d7f1-416d-a5a4-e922dc6edb29.1.12" : "Blue",
-        "97faaca4-d7f1-416d-a5a4-e922dc6edb29.1.14" : "Red",
-        "97faaca4-d7f1-416d-a5a4-e922dc6edb29.1.17" : "Yellow"
-      }
+      "API_KEY": "9E7F17D55B6FCEB9BF9777CCAA2BBE9148FCB383802BCA3A283653",
+      "API_ENDPOINT_BASE" : "https://mapi.local10.com"
     },
     "COMSCORE": {
       "C2_VALUE": "7507054",
       "PUBLISHER_SECRET_CODE": "7a4fa75513b461050f0c03910aaf27e2"
     },
     "CARNIVAL": {
-      "APP_KEY": "ccd530f5f59483d8883bfb4a55917b15adcef96b"
+      "APP_KEY": "501c7aca8c3c7f38dc2e1b73164f6e2a2c453623"
     },
     "KALTURA_PLAYKIT": {
       "URL": "https://cdnapisec.kaltura.com/p/1636891/sp/%d/playManifest/entryId/%s/format/applehttp/protocol/https/a.m3u8",
-      "PARTNER_ID": 1636891,
-      "PLAYER_ID": 25345621,
+      "PARTNER_ID": 2031101,
+      "PLAYER_ID": 32105441,
       "AD_URL": "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=%s&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]",
       "AD_BASE": "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/%s%s/%s&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]",
       "AD_NETWORK": "15466288",
-      "AD_PREFIX": "/TEST/App/Newsreader"
+      "AD_PREFIX": "/WPLG/App/Newsreader"
     },
-    "AWS_DATA": {
-      "DYNAMODB_ARTICLES_TABLE": "ksatuat_appfeeds_articles",
-      "DYNAMODB_SECTIONS_TABLE": "ksatuat_appfeeds_section",
-      "REGION": "us-east-1",
-      "POOL_ID": "us-east-1:cdfaf381-3f15-490f-b7fa-b9a4d904484c"
+    "DAI_LIVESTREAM": {
+      "hlsURL": "https://pubads.g.doubleclick.net/ssai/event/SlJxkb11SsyxbqnIM-B7UA/master.m3u8",
+      "AD_TAG": "/15466288/WPLG/App/Newsreader"
     },
     "AWS": {
       "POOL_ID": "us-east-1:be5eb4cc-414f-4bb1-a342-3c02ea4bd817",
@@ -356,7 +396,7 @@
     },
     "YOUTUBE": {
       "KEY": "AIzaSyB2rKwU8re8HHchu5oyI9M5ILdc6-2nLMg",
-      "ENABLED": true
+      "ENABLED": false
     }
   },
   "PUSH_ALERTS_CATEGORIES": [
